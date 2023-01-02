@@ -2,5 +2,7 @@
 import greeter from './core/greeter.js';
 // old school JS
 (function (root) {
-	document.body.textContent = greeter('Jane Doe');
+	const node = document.createElement('div');
+	node.textContent = greeter('Jane Doe');
+	document.body.appendChild(node);
 })(this);

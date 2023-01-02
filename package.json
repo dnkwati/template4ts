@@ -1,0 +1,22 @@
+{
+  "name": "template4ts",
+  "version": "1.0.0",
+  "author": "Divine Nkwati",
+  "description": "Typescript - Project template.",
+  "type": "module",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "package",
+    "es6",
+    "node",
+    "module"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}

@@ -1,2 +1,5 @@
-# template4ts
-Typescript - Project template.
+# Typescript - Project template.
+
+# License
+
+MIT license, see LICENSE.

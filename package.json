@@ -17,10 +17,14 @@
   "bugs": {
     "url": "https://github.com/dnkwati/template4ts/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dnkwati/template4ts.git"
+  },
   "scripts": {
     "dev": "./node_modules/.bin/tsc -w"
   },
   "devDependencies": {
-    "typescript": "^4.9.4"
+    "typescript": "latest"
   }
 }

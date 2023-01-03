@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "dev": "tsc -w"
+    "dev": "./node_modules/.bin/tsc -w"
   },
   "devDependencies": {
     "typescript": "^4.9.4"

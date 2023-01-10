@@ -23,7 +23,7 @@
   },
   "scripts": {
     "dev": "./node_modules/.bin/tsc -w",
-    "dist": "(./node_modules/.bin/tsc --outDir dist/js/module) && (./node_modules/.bin/esbuild src/index.ts --outfile=dist/js/app.min.js --bundle --minify)"
+    "dist": "(./node_modules/.bin/tsc --outDir dist/js/module) && (./node_modules/.bin/esbuild src/index.ts --outfile=dist/js/app.js --bundle --minify)"
   },
   "devDependencies": {
     "esbuild": "latest",

@@ -22,12 +22,11 @@
     "url": "https://github.com/dnkwati/template4ts.git"
   },
   "scripts": {
-    ":dist:minify": "./node_modules/.bin/terser dist/js/app.js -c -m -o dist/js/app.min.js",
     "dev": "./node_modules/.bin/tsc -w",
-    "dist": "(./node_modules/.bin/tsc --outDir dist/js/module) && (npm run :dist:minify)"
+    "dist": "(./node_modules/.bin/tsc --outDir dist/js/module) && (./node_modules/.bin/esbuild src/index.ts --outfile=dist/js/app.min.js --bundle --minify)"
   },
   "devDependencies": {
-    "terser": "latest",
+    "esbuild": "latest",
     "typescript": "latest"
   }
 }

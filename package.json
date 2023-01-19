@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Typescript - Project template.",
   "type": "module",
+  "main": "dist/module/index.js",
+  "typings": "dist/module/index.d.ts",
   "keywords": [
     "javascript",
     "typescript",
@@ -22,11 +24,12 @@
     "url": "https://github.com/dnkwati/template4ts.git"
   },
   "scripts": {
-    "dev": "./node_modules/.bin/tsc -w",
-    "dist": "(./node_modules/.bin/tsc --outDir dist/js/module) && (./node_modules/.bin/esbuild src/index.ts --outfile=dist/js/app.js --bundle --minify)"
+    "dev": "(rm -rf ./dev) && (./node_modules/.bin/tsc --outDir dev/module -w) & (if [ \"$(which serve)\" ]; then serve ./; fi)",
+    "dist": "(rm -rf ./dist) && ./node_modules/.bin/tsc & (./node_modules/.bin/esbuild src/index.ts --outfile=dist/bundle.js --bundle --minify)"
   },
   "devDependencies": {
     "esbuild": "latest",
+    "npm-dts": "latest",
     "typescript": "latest"
   }
 }

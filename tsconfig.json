@@ -1,4 +1,6 @@
 {
+  // Change this to match your project
+  "include": ["src/**/*"],
   // Options for file/directory watching
   "watchOptions": {
     // Use native file system events for files and directories
@@ -12,9 +14,10 @@
     // Finally, two additional settings for reducing the amount of possible
     // files to track  work from these directories
     // "excludeFiles": ["dist/fileWhichChangesOften.ts"],
-    "excludeDirectories": ["**/node_modules", "**/*.spec.ts", "**/out"]
+    "excludeDirectories": ["**/node_modules", "**/*.spec.ts", "**/dist"]
   },
   "compilerOptions": {
+    "removeComments": true,
     /* Visit https://aka.ms/tsconfig to read more about this file */
     /* Language and Environment */
     "target": "es6",
@@ -22,7 +25,7 @@
     /* Modules */
     "module": "es2015",
     "rootDir": "./src",
-    "outDir": "./out/js/module",
+    "outDir": "./dist/module",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
 
@@ -30,6 +33,17 @@
     "strict": true,
 
     /* Completeness */
-    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,
+    // Tells TypeScript to read JS files, as
+    // normally they are ignored as source files
+    "allowJs": true,
+    // Generate d.ts files
+    "declaration": true
+    // This compiler run should
+    // only output d.ts files
+    // "emitDeclarationOnly": true,
+    // go to js file when using IDE functions like
+    // "Go to Definition" in VSCode
+    // "declarationMap": true
   }
 }

@@ -8,7 +8,6 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dists
 dist
 dist-ssr
 *.local
@@ -25,6 +24,7 @@ dist-ssr
 *.sw?
 
 @install
+dists
 pub
 dev
 out
